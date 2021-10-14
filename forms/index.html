@@ -2,14 +2,70 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="./styles.css">
+    <!-- 
+        The <meta> tag defines metadata about an HTML document. Metadata is data (information) about data.
+        <meta> tags always go inside the <head> element, and are typically used to specify character set,
+             page description, keywords, author of the document, and viewport settings.
+    
+             Metadata will not be displayed on the page, but is machine parsable.
+
+        Metadata is used by browsers (how to display content or reload page), search engines (keywords), and other web services.
+
+    -->
+    <!-- Specifies the character encoding for the HTML document  -->
     <meta charset="UTF-8">
+    <!-- 
+        The http-equiv attribute provides an HTTP header for the information/value of the content attribute.
+
+        The http-equiv attribute can be used to simulate an HTTP response header.
+     -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Specifies a name for the metadata
+         Example:
+         application-name
+         author
+         description
+         generator
+         keywords
+         viewport
+         If the viewport is not present the html will show as desktop instead of a mobile design
+    -->
+    <!-- Setting the viewport to make your website look good on all devices -->
+    <!-- This gives the browser instructions on how to control the page's dimensions and scaling.
+
+         The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
+
+        The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>freeCodeCamp</title>
+    <!-- Define keywords for search engine -->
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <!-- Define a description of your web page -->
+    <meta name="description" content="First Form for freeCodeCamp">
+    <!-- Define the author of a page -->
+    <meta name="author" content="Rolando Garcia">
+    <title>freeCodeCamp: Survey Form</title>
 </head>
 
 <body>
+    <!-- 
+        The <div> HTML element is the generic container for flow content. It has no effect on the content or layout until styled in 
+            some way using CSS (e.g. styling is directly applied to it, or some kind of layout model like Flexbox is applied to its parent element).
+        
+        As a "pure" container, the <div> element does not inherently represent anything. Instead, it's used to group content so it can be easily styled
+        using the class or id attributes, marking a section of a document as being written in a different language (using the lang attribute), and so on.
+        
+        In summary, can works as a container of its children
+    -->
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">freeCodeCamp Survey Form</h1>
+            <p>Thank you for taking the time to help us improve the platform</p>
+        </header>
+        <form id="survey-form">
 
+        </form>
+    </div>
 </body>
 
 </html>
